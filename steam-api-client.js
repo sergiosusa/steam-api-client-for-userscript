@@ -11,7 +11,7 @@ function SteamApiClient() {
 
     this.steamUser = null;
     this.steamApiId = null;
-    
+
     this.searchIndex = null;
 
     this.retrieveOwnedGames = () => {
@@ -66,6 +66,7 @@ function SteamApiClient() {
             this.addField('searchUrl');
             this.setRef('appId');
         });
+        this.searchIndex.saveDocument(true);
     };
 
     this.storeVariable = (identifier, variable) => {
