@@ -11,8 +11,7 @@ function SteamApiClient() {
 
     this.steamUser = null;
     this.steamApiId = null;
-
-    this.instantIndexRefresh = false;
+    
     this.searchIndex = null;
 
     this.retrieveOwnedGames = () => {
@@ -23,10 +22,6 @@ function SteamApiClient() {
         this.searchIndex = this.retrieveVariable(this.steamUser);
 
         return new Promise(((resolve, reject) => {
-
-            if (!this.instantIndexRefresh && this.searchIndex) {
-                resolve(this.searchIndex);
-            }
 
             this.initializeSearchIndex();
 
