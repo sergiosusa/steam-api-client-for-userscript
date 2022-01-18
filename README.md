@@ -17,7 +17,7 @@ To use this library in an userscript you have to include the script file and its
 ```
 // @grant        GM_xmlhttpRequest
 // @require      https://cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.6/elasticlunr.js
-// @require      https://raw.githubusercontent.com/sergiosusa/fanatical-enhanced/test-external-script/steam-api.js
+// @require      https://raw.githubusercontent.com/sergiosusa/steam-api-client-for-userscript/main/steam-api-client.js
 ```
 
 ## 🔧Configuration🔧
